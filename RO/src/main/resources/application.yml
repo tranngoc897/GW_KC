@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ro
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8088/auth/realms/his/protocol/openid-connect/certs
+
+
+
